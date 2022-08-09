@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Dashboard - TripleThree</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+        <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0">
+            <div class="container-fluid d-flex flex-column p-0">
+                <a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
+
+                    <div class="sidebar-brand-text mx-3"><span>TripleThree</span></div>
+                </a>
+                <hr class="sidebar-divider my-0">
+                <ul class="navbar-nav text-light" id="accordionSidebar">
+                    <li class="nav-item"><a class="nav-link active" href="index.html"><i
+                                class="fas fa-tachometer-alt"></i><span>Dashboard</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="./withdarw.html"><i
+                                class="fas fa-table"></i>Withdraw<span></span></a></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"></li>
+                </ul>
+                <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
+            </div>
+        </nav>
+        <div class="d-flex flex-column" id="content-wrapper">
+            <div id="content">
+                <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
+                    <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle me-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
+                        <form class="d-none d-sm-inline-block me-auto ms-md-3 my-2 my-md-0 mw-100 navbar-search">
+                            <div class="input-group"></div>
+                        </form>
+                        <ul class="navbar-nav flex-nowrap ms-auto">
+                            <div class="d-none d-sm-block topbar-divider"></div>
+                            <li class="nav-item dropdown no-arrow">
+                                <div class="nav-item dropdown no-arrow">
+                                    <a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">
+                                        <span id="userName" class="d-none d-lg-inline me-2 text-gray-600 small">Valerie
+                                            Luna</span>
+                                        <i class="fa fa-user-circle fs-1"></i>
+                                    </a>
+
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="container-fluid">
+                    <div class="d-sm-flex justify-content-between align-items-center mb-4">
+                        <h3 class="text-dark mb-0">Dashboard</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-xl-3 mb-4">
+                            <div class="card shadow border-start-primary py-2">
+                                <div class="card-body">
+                                    <div class="row align-items-center no-gutters">
+                                        <div class="col me-2">
+                                            <div class="text-uppercase text-primary fw-bold text-xs mb-1"><span>Earnings
+                                                    (today)</span></div>
+                                            <div class="text-dark fw-bold h5 mb-0"><span>$</span><span id="earned">00</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto"><i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3 mb-4">
+                            <div class="card shadow border-start-info py-2">
+                                <div class="card-body">
+                                    <div class="row align-items-center no-gutters">
+                                        <div class="col me-2">
+                                            <div class="text-uppercase text-info fw-bold text-xs mb-1">
+                                                <span>Tasks</span></div>
+                                            <div class="row g-0 align-items-center">
+                                                <div class="col-auto">
+                                                    <div class="text-dark fw-bold h5 mb-0 me-3"><span>100%</span></div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="progress progress-sm">
+                                                        <div class="progress-bar bg-info" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+                                                            <span class="visually-hidden">100%</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto"><i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3 mb-4">
+                            <div class="card shadow border-start-warning py-2">
+                                <div class="card-body">
+                                    <div class="row align-items-center no-gutters">
+                                        <div class="col me-2">
+                                            <div class="text-uppercase text-warning fw-bold text-xs mb-1"><span>Pending
+                                                    Withdraw</span></div>
+                                            <div class="text-dark fw-bold h5 mb-0"><span>$</span><span id="withEarned">200.00</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto"><i class="far fa-money-bill-alt fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="container">
+                            <div class="col-lg-12 mb-4">
+                                <div class="card shadow mb-4"></div>
+                                <div class="card shadow mb-4">
+                                    <div class="card-header py-3">
+                                        <h6 class="text-primary fw-bold m-0">task List</h6>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <!-- list-1 -->
+                                        <li class=" list-group-item">
+                                            <div class="row align-items-center no-gutters ">
+                                                <div class=" col me-2 ">
+                                                    <h6 class=" mb-0 mt-2"><strong>Task-1</strong></h6>
+                                                </div>
+                                                <!-- Button trigger modal -->
+                                                <button type="button" class="btn btn-info text-white mt-2" data-bs-toggle="modal" data-bs-target="#myModal">
+                                                    View
+                                                </button>
+
+                                                <!-- Modal HTML -->
+                                                <div id="myModal" class="modal fade">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+
+                                                            <div class="modal-body">
+                                                                <div class="embed-responsive embed-responsive-16by9">
+                                                                    <video width="100%" height="100%" controls>
+                                                                        <source src="./media/ad-one.mp4"
+                                                                            type="video/mp4">
+                                                                        <source src="movie.ogg" type="video/ogg">
+                                                                    </video>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" id="doneBtn1" class="btn btn-secondary" data-bs-dismiss="modal">Done</button>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <!-- list-2 -->
+                                        <li class=" list-group-item">
+                                            <div class="row align-items-center no-gutters ">
+                                                <div class=" col me-2 ">
+                                                    <h6 class=" mb-0 mt-2"><strong>Task-2</strong></h6>
+                                                </div>
+                                                <!-- Button trigger modal -->
+                                                <button type="button" class="btn btn-info text-white mt-2" data-bs-toggle="modal" data-bs-target="#myModal">
+                                                    View
+                                                </button>
+
+                                                <!-- Modal HTML -->
+                                                <div id="myModal" class="modal fade">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+
+                                                            <div class="modal-body">
+                                                                <div class="embed-responsive embed-responsive-16by9">
+                                                                    <video width="100%" height="100%" controls>
+                                                                        <source src="./media/ad-one.mp4"
+                                                                            type="video/mp4">
+                                                                        <source src="movie.ogg" type="video/ogg">
+                                                                    </video>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" id="doneBtn2" class="btn btn-secondary" data-bs-dismiss="modal">Done</button>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <!-- list-3 -->
+                                        <li class=" list-group-item">
+                                            <div class="row align-items-center no-gutters ">
+                                                <div class=" col me-2 ">
+                                                    <h6 class=" mb-0 mt-2"><strong>Task-3</strong></h6>
+                                                </div>
+                                                <!-- Button trigger modal -->
+                                                <button type="button" class="btn btn-info text-white mt-2" data-bs-toggle="modal" data-bs-target="#myModal">
+                                                    View
+                                                </button>
+
+                                                <!-- Modal HTML -->
+                                                <div id="myModal" class="modal fade">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+
+                                                            <div class="modal-body">
+                                                                <div class="embed-responsive embed-responsive-16by9">
+                                                                    <video width="100%" height="100%" controls>
+                                                                        <source src="./media/ad-one.mp4"
+                                                                            type="video/mp4">
+                                                                        <source src="movie.ogg" type="video/ogg">
+                                                                    </video>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" id="doneBtn3" class="btn btn-secondary" data-bs-dismiss="modal">Done</button>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <!-- list-4 -->
+                                        <li class=" list-group-item">
+                                            <div class="row align-items-center no-gutters ">
+                                                <div class=" col me-2 ">
+                                                    <h6 class=" mb-0 mt-2"><strong>Task-4</strong></h6>
+                                                </div>
+                                                <!-- Button trigger modal -->
+                                                <button type="button" class="btn btn-info text-white mt-2" data-bs-toggle="modal" data-bs-target="#myModal">
+                                                    View
+                                                </button>
+
+                                                <!-- Modal HTML -->
+                                                <div id="myModal" class="modal fade">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+
+                                                            <div class="modal-body">
+                                                                <div class="embed-responsive embed-responsive-16by9">
+                                                                    <video width="100%" height="100%" controls>
+                                                                        <source src="./media/ad-one.mp4"
+                                                                            type="video/mp4">
+                                                                        <source src="movie.ogg" type="video/ogg">
+                                                                    </video>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" id="doneBtn4" class="btn btn-secondary" data-bs-dismiss="modal">Done</button>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <!-- list-5 -->
+                                        <li class=" list-group-item">
+                                            <div class="row align-items-center no-gutters ">
+                                                <div class=" col me-2 ">
+                                                    <h6 class=" mb-0 mt-2"><strong>Task-5</strong></h6>
+                                                </div>
+                                                <!-- Button trigger modal -->
+                                                <button type="button" class="btn btn-info text-white mt-2" data-bs-toggle="modal" data-bs-target="#myModal">
+                                                    View
+                                                </button>
+
+                                                <!-- Modal HTML -->
+                                                <div id="myModal" class="modal fade">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+
+                                                            <div class="modal-body">
+                                                                <div class="embed-responsive embed-responsive-16by9">
+                                                                    <video width="100%" height="100%" controls>
+                                                                        <source src="./media/ad-one.mp4"
+                                                                            type="video/mp4">
+                                                                        <source src="movie.ogg" type="video/ogg">
+                                                                    </video>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" id="doneBtn5" class="btn btn-secondary" data-bs-dismiss="modal">Done</button>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <!-- list-6 -->
+                                        <li class=" list-group-item">
+                                            <div class="row align-items-center no-gutters ">
+                                                <div class=" col me-2 ">
+                                                    <h6 class=" mb-0 mt-2"><strong>Task-6</strong></h6>
+                                                </div>
+                                                <!-- Button trigger modal -->
+                                                <button type="button" class="btn btn-info text-white mt-2" data-bs-toggle="modal" data-bs-target="#myModal">
+                                                    View
+                                                </button>
+
+                                                <!-- Modal HTML -->
+                                                <div id="myModal" class="modal fade">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+
+                                                            <div class="modal-body">
+                                                                <div class="embed-responsive embed-responsive-16by9">
+                                                                    <video width="100%" height="100%" controls>
+                                                                        <source src="./media/ad-one.mp4"
+                                                                            type="video/mp4">
+                                                                        <source src="movie.ogg" type="video/ogg">
+                                                                    </video>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" id="doneBtn6" class="btn btn-secondary" data-bs-dismiss="modal">Done</button>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <!-- list-7 -->
+                                        <li class=" list-group-item">
+                                            <div class="row align-items-center no-gutters ">
+                                                <div class=" col me-2 ">
+                                                    <h6 class=" mb-0 mt-2"><strong>Task-7</strong></h6>
+                                                </div>
+                                                <!-- Button trigger modal -->
+                                                <button type="button" class="btn btn-info text-white mt-2" data-bs-toggle="modal" data-bs-target="#myModal">
+                                                    View
+                                                </button>
+
+                                                <!-- Modal HTML -->
+                                                <div id="myModal" class="modal fade">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+
+                                                            <div class="modal-body">
+                                                                <div class="embed-responsive embed-responsive-16by9">
+                                                                    <video width="100%" height="100%" controls>
+                                                                        <source src="./media/ad-one.mp4"
+                                                                            type="video/mp4">
+                                                                        <source src="movie.ogg" type="video/ogg">
+                                                                    </video>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" id="doneBtn7" class="btn btn-secondary" data-bs-dismiss="modal">Done</button>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <!-- list-8 -->
+                                        <li class=" list-group-item">
+                                            <div class="row align-items-center no-gutters ">
+                                                <div class=" col me-2 ">
+                                                    <h6 class=" mb-0 mt-2"><strong>Task-8</strong></h6>
+                                                </div>
+                                                <!-- Button trigger modal -->
+                                                <button type="button" class="btn btn-info text-white mt-2" data-bs-toggle="modal" data-bs-target="#myModal">
+                                                    View
+                                                </button>
+
+                                                <!-- Modal HTML -->
+                                                <div id="myModal" class="modal fade">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+
+                                                            <div class="modal-body">
+                                                                <div class="embed-responsive embed-responsive-16by9">
+                                                                    <video width="100%" height="100%" controls>
+                                                                        <source src="./media/ad-one.mp4"
+                                                                            type="video/mp4">
+                                                                        <source src="movie.ogg" type="video/ogg">
+                                                                    </video>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" id="doneBtn8" class="btn btn-secondary" data-bs-dismiss="modal">Done</button>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <!-- list-9 -->
+                                        <li class=" list-group-item">
+                                            <div class="row align-items-center no-gutters ">
+                                                <div class=" col me-2 ">
+                                                    <h6 class=" mb-0 mt-2"><strong>Task-9</strong></h6>
+                                                </div>
+                                                <!-- Button trigger modal -->
+                                                <button type="button" class="btn btn-info text-white mt-2" data-bs-toggle="modal" data-bs-target="#myModal">
+                                                    View
+                                                </button>
+
+                                                <!-- Modal HTML -->
+                                                <div id="myModal" class="modal fade">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+
+                                                            <div class="modal-body">
+                                                                <div class="embed-responsive embed-responsive-16by9">
+                                                                    <video width="100%" height="100%" controls>
+                                                                        <source src="./media/ad-one.mp4"
+                                                                            type="video/mp4">
+                                                                        <source src="movie.ogg" type="video/ogg">
+                                                                    </video>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" id="doneBtn9" class="btn btn-secondary" data-bs-dismiss="modal">Done</button>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <!-- list-10 -->
+                                        <li class=" list-group-item">
+                                            <div class="row align-items-center no-gutters ">
+                                                <div class=" col me-2 ">
+                                                    <h6 class=" mb-0 mt-2"><strong>Task-10</strong></h6>
+                                                </div>
+                                                <!-- Button trigger modal -->
+                                                <button type="button" class="btn btn-info text-white mt-2" data-bs-toggle="modal" data-bs-target="#myModal">
+                                                    View
+                                                </button>
+
+                                                <!-- Modal HTML -->
+                                                <div id="myModal" class="modal fade">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+
+                                                            <div class="modal-body">
+                                                                <div class="embed-responsive embed-responsive-16by9">
+                                                                    <video width="100%" height="100%" controls>
+                                                                        <source src="./media/ad-one.mp4"
+                                                                            type="video/mp4">
+                                                                        <source src="movie.ogg" type="video/ogg">
+                                                                    </video>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" id="doneBtn10" class="btn btn-secondary" data-bs-dismiss="modal">Done</button>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="bg-white sticky-footer">
+                <div class="container my-auto">
+                    <div class="text-center my-auto copyright"><span>Copyright © treplethree.2022</span></div>
+                </div>
+            </footer>
+        </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="./dashbord.js"></script>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.1/firebase-app.js"; import { getAuth } from "https://www.gstatic.com/firebasejs/9.9.1/firebase-auth.js"; import { getDatabase, ref, set, update,onValue } from "https://www.gstatic.com/firebasejs/9.9.1/firebase-database.js";const
+        firebaseConfig = { apiKey: "AIzaSyDtP2M_QF4m6285nRMBRz-BdScpHCJXfn4", authDomain: "my-auth-a72fc.firebaseapp.com", databaseURL: "https://my-auth-a72fc-default-rtdb.firebaseio.com", projectId: "my-auth-a72fc", storageBucket: "my-auth-a72fc.appspot.com",
+        messagingSenderId: "780120404405", appId: "1:780120404405:web:f5b3e5553bec6324b329fc" }; const app = initializeApp(firebaseConfig); const database = getDatabase(); const auth = getAuth(); const user = auth.currentUser; if (user !== null) { user.providerData.forEach((profile)=>
+        { console.log("Sign-in provider: " + profile.providerId); console.log(" Provider-specific UID: " + users.uid); console.log(" fullName: " + users.displayName); console.log(" email:" + users.email); }); };
+    </script>
+</body>
+
+</html>
